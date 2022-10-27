@@ -13,7 +13,7 @@ if os.path.exists('.bzr'):
         f.close()
         o.close()
     except Exception as e:
-        print repr(e)
+        print(e)
 
 setup(name='VMBuilder',
       version='0.12.4',
