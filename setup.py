@@ -12,7 +12,7 @@ if os.path.exists('.bzr'):
         f.write(o.read())
         f.close()
         o.close()
-    except Exception, e:
+    except Exception as e:
         print repr(e)
 
 setup(name='VMBuilder',
