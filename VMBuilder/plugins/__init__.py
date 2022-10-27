@@ -26,7 +26,8 @@ from VMBuilder.exception import VMBuilderException
 
 def load_plugins():
     for plugin in find_plugins():
-        exec "import %s" % plugin
+        plug = "import %s" % plugin
+        exec(plug)
 
 def find_plugins():
     retval = []
